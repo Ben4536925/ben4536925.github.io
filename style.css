@@ -1,0 +1,131 @@
+:root {
+    --bg: #141c19;
+    --sf: #1d2923;
+    --ln: #2c403b;
+    --tx: #e6e8ee;
+    --mu: #9aa1b2;
+    --ac: #8affad;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 4rem;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--tx);
+    font: 16px/1.8 system-ui, "Hiragino Sans", "Yu Gothic", sans-serif;
+}
+
+a {
+    color: var(--ac)
+}
+
+a:focus-visible {
+    outline: 2px solid var(--ac);
+    outline-offset: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--ln);
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+nav a {
+    color: var(--mu);
+    text-decoration: none;
+}
+
+nav a[aria-current] {
+    color: var(--tx);
+    border-bottom: 2px solid var(--ac);
+}
+
+main {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 4rem;
+}
+
+.name {
+
+    font: 600 clamp(2.8rem, 14vw, 5.5rem)/1.1 ui-monospace, Menlo, Consolas, monospace;
+    letter-spacing: .04em;
+    color: var(--ac);
+    margin: 2.5rem 0 .25rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 .75rem;
+    padding-left: .75rem;
+    border-left: 5px solid var(--ac);
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 .75rem;
+    padding-left: .75rem;
+    border-left: 2px solid var(--ac);
+}
+
+.title{
+    font-size:1.5rem;
+}
+
+p {
+    margin: .5rem 0;
+}
+
+.mu {
+    color: var(--mu);
+}
+
+.box {
+    background: var(--sf);
+    border: 1px solid var(--ln);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: .5rem 0;
+}
+
+th,
+td {
+    text-align: left;
+    padding: .5rem .75rem;
+    border-bottom: 1px solid var(--ln);
+    vertical-align: top;
+}
+
+th {
+    color: var(--mu);
+    font-weight: 500;
+    width: 35%;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+footer {
+    color: var(--mu);
+    font-size: .85rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--ln);
+}
